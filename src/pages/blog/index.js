@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
+//Styled components
+import { Container } from '../../components/posts';
+
 const Posts = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes;
   return (
-    <div>
+    <Container>
       {posts.map(post => {
         return (
           <Link to={`/post/${post.frontmatter.slug}`} key={post.id}>
@@ -15,7 +18,7 @@ const Posts = ({ data }) => {
           </Link>
         )
       })}
-    </div>
+    </Container>
   )
 }
 

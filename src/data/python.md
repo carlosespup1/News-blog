@@ -1,5 +1,5 @@
 ---
-title: Python
+title: Flask vs FastAPI vs Django
 description: this is a article about python
 slug: python
 ---
