@@ -15,6 +15,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -33,8 +39,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `personal blog`,
+        short_name: `myblog`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
